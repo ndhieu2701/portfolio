@@ -1,0 +1,17 @@
+/* app */
+.App {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    padding: 180px var(--padding-parent) 0;
+}
+
+.container.light {
+    background-color: var(--light-color);
+}
+
+.container.dark {
+    background-color: var(--dark-color);
+}

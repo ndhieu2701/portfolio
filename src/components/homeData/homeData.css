@@ -1,0 +1,123 @@
+/* home data */
+.home-data {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+
+/* home data avatar */
+.home-data-pic {
+    min-width: 300px;
+    min-height: 300px;
+    background-image: url("../../assets/avatar.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: avatar-animate 1.5s ease-in-out infinite;
+}
+
+.home-data-pic.light {
+    box-shadow: inset 0 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.home-data-pic.dark {
+    box-shadow: inset 0 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+@keyframes avatar-animate {
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+}
+
+/* home data data */
+.data-name {
+    display: inline-block;
+    font-size: 5.2rem;
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+.data-name.light {
+    color: var(--text-light-color);
+}
+
+.data-name.dark {
+    color: var(--text-dark-color);
+}
+
+.home-data-career {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-top: 12px;
+    padding-left: 50px;
+    position: relative;
+}
+
+.home-data-career::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    top: 50%;
+    left: 0;
+}
+
+.home-data-career.light {
+    color: var(--text-light-color);
+}
+
+.home-data-career.light::before{
+    background-color: var(--text-light-color);
+}
+
+.home-data-career.dark {
+    color: var(--text-dark-color);
+}
+
+.home-data-career.dark::before {
+    background-color: var(--text-dark-color);
+}
+
+.home-data-des {
+    font-size: 1.6rem;
+    max-width: 70%;
+    margin-top: 12px;
+}
+
+.home-data-des.light {
+    color: var(--text-light-color);
+}
+
+.home-data-des.dark {
+    color: var(--text-dark-color);
+}
+
+.home-data-btn {
+    margin-top: 12px;
+    width: 140px;
+}
+
+.home-data-btn span {
+    margin-right: 4px;
+}
+
+.home-data-btn i {
+    font-size: 1.8rem;
+}
+
+.home-data-btn:hover span {
+    transition: 0.2s ease-in-out;
+    margin-right: 10px;
+}

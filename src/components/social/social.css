@@ -1,0 +1,28 @@
+/* social */
+.social {
+    display: flex;
+    flex-direction: column;
+}
+
+/* social item */
+.social-item {
+    width: 40px;
+    height: 40px;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* social item link & icon */
+.social-item-link.light {
+    color: var(--text-light-color);
+}
+
+.social-item-link.dark {
+    color: var(--text-dark-color);
+}
+
+.social-item-link i {
+    font-size: 2.4rem;
+}
