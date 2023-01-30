@@ -1,0 +1,33 @@
+.section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.section-container.light .section-title {
+    color: var(--text-light-color);
+}
+
+.section-container.dark  .section-title{
+    color: var(--text-dark-color);
+}
+
+.section-des {
+    margin-top: 12px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.section-container.light .section-des {
+    color: var(--text-sub-light-color);
+}
+
+.section-container.dark .section-des{
+    color: var(--text-sub-dark-color);
+}

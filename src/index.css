@@ -8,6 +8,10 @@
     --light-color: #fff;
     --text-light-color: #333;
     --text-dark-color: #fff;
+    --text-sub-light-color: #777;
+    --text-sub-dark-color: #ccc;
+    --text-sub-2-light-color: #bbb;
+    --text-sub-2-dark-color: #ddd;
     --padding-parent: 24px;
     --max-width-pc: 1280px;
 }
@@ -39,7 +43,7 @@ a {
 
 section {
     width: 100%;
-    padding-bottom: 120px;
+    padding: 120px 0 20px;
 }
 
 section.light {
@@ -60,7 +64,7 @@ section.dark {
     justify-content: center;
     border-radius: 20px;
     font-size: 1.6rem;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .btn.light {

@@ -97,11 +97,11 @@
 }
 
 .home-data-des.light {
-    color: var(--text-light-color);
+    color: var(--text-sub-light-color);
 }
 
 .home-data-des.dark {
-    color: var(--text-dark-color);
+    color: var(--text-sub-dark-color);
 }
 
 .home-data-btn {
@@ -120,4 +120,35 @@
 .home-data-btn:hover span {
     transition: 0.2s ease-in-out;
     margin-right: 10px;
+}
+
+.home-scroll-down {
+    margin-top: 160px;
+    padding: 4px 0;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.home-scroll-down.light {
+    color: var(--text-light-color);
+}
+
+.home-scroll-down.dark {
+    color: var(--text-dark-color);
+}
+
+.home-scroll-down i:first-child {
+    left: 0;
+    bottom: auto;
+    font-size: 3rem;
+}
+
+.home-scroll-down i:last-child {
+    font-size: 2rem;
+}
+
+.home-scroll-down span {
+    margin: 0 4px;
+    font-weight: 600;
 }

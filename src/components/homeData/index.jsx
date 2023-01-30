@@ -22,6 +22,11 @@ const HomeData = () => {
           <span>Say hello</span>
           <i className="uil uil-message"></i>
         </a>
+        <div className={`home-scroll-down ${theme}`}>
+          <i className="bx bx-mouse"></i>
+          <span>Scroll down</span>
+          <i className="bx bx-down-arrow-alt"></i>
+        </div>
       </div>
     </div>
   );

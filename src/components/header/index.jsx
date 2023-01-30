@@ -10,7 +10,7 @@ const Header = () => {
 
   window.addEventListener("scroll", () => {
     let header = document.querySelector(".header");
-    if (window.scrollY > 520) {
+    if (window.scrollY > 440) {
       header.style.boxShadow = "0 1px 4px rgba(0, 0, 0, 0.15)";
     } else {
       header.style.boxShadow = "none";
