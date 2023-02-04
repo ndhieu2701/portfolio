@@ -3,6 +3,7 @@ import "./App.css";
 import About from "./components/about";
 import Header from "./components/header";
 import Home from "./components/home";
+import Skills from "./components/skills";
 
 function App() {
   const theme = useSelector((state) => state.themes.themes);
@@ -12,6 +13,7 @@ function App() {
       <div className={`container ${theme}`}>
         <Home />
         <About />
+        <Skills />
       </div>
     </div>
   );
