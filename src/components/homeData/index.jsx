@@ -15,8 +15,7 @@ const HomeData = () => {
         </div>
         <div className={`home-data-career ${theme}`}>Intern JS Developer</div>
         <p className={`home-data-des ${theme}`}>
-          Mình là một người vui vẻ hoà đồng với mọi người, tận tuỵ với công việc
-          của mình...
+          Mình là một người vui vẻ hoà đồng với mọi người, ham học hỏi những điều mới mẻ...
         </p>
         <a href="#contact" className={`btn home-data-btn ${theme}`}>
           <span>Say hello</span>

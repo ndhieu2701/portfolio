@@ -4,10 +4,12 @@
 /* variables */
 :root {
     --header-dark-color: #242526;
+    --footer-dark-color: #242526;
+    --footer-light-color: #eee;
     --dark-color: #1b1b1d;
     --light-color: #fff;
     --text-light-color: #333;
-    --text-dark-color: #fff;
+    --text-dark-color: #ecece4;
     --text-sub-light-color: #777;
     --text-sub-dark-color: #ccc;
     --text-sub-2-light-color: #aaa;
@@ -28,6 +30,31 @@ html {
     font-size: 62.5%;
     font-family: 'Lexend', sans-serif;
     scroll-behavior: smooth;
+}
+
+/* Customize the scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    /* Width of the scrollbar */
+}
+
+/* Customize the track */
+::-webkit-scrollbar-track {
+    background: transparent;
+    /* Color of the track */
+}
+
+/* Customize the thumb */
+::-webkit-scrollbar-thumb {
+    background: var(--text-sub-dark-color);
+    border-radius: 10px;
+    /* Color of the thumb */
+}
+
+/* Customize the thumb when hovering over it */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-sub-light-color);
+    /* Color of the thumb on hover */
 }
 
 

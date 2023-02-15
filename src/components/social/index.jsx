@@ -11,6 +11,7 @@ const Social = () => {
         <a
           href="https://www.facebook.com/gintoki2701"
           className={`social-item-link ${theme}`}
+          target="_blank"
         >
           <i className="bx bxl-facebook"></i>
         </a>
@@ -19,6 +20,7 @@ const Social = () => {
         <a
           href="https://github.com/ndhieu2701"
           className={`social-item-link ${theme}`}
+          target="_blank"
         >
           <i className="uil uil-github-alt"></i>
         </a>

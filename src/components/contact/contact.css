@@ -1,0 +1,174 @@
+.contact-container {
+    width: 100%;
+    max-width: var(--max-width-pc);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.contact-wrap {
+    width: 100%;
+    margin-top: 56px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.contact-wrap.light {
+    color: var(--text-light-color);
+}
+
+.contact-wrap.dark {
+    color: var(--text-dark-color);
+}
+
+.contact-title {
+    font-size: 1.8rem;
+    margin-bottom: 24px;
+}
+
+.contact-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 120px;
+    margin: 16px 0;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+}
+
+.contact-info i {
+    font-size: 2rem;
+}
+
+.contact-label {
+    font-size: 1.4rem;
+    margin: 4px 0;
+}
+
+.contact-des {
+    font-size: 1.2rem;
+}
+
+.contact-wrap.light .contact-des {
+    color: var(--text-sub-light-color);
+}
+
+.contact-wrap.dark .contact-des {
+    color: var(--text-sub-dark-color);
+}
+
+.contact-action {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    margin-top: 6px;
+    font-weight: 500;
+}
+
+.contact-action:hover i {
+    transition: 0.5s ease-in-out;
+    margin-left: 4px;
+}
+
+.contact-wrap.light .contact-action {
+    color: var(--text-light-color);
+}
+
+.contact-wrap.dark .contact-action {
+    color: var(--text-dark-color);
+}
+
+.contact-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    margin: 16px 0 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    padding: 16px;
+    font-family: inherit;
+    font-size: 1.3rem;
+}
+
+.form-input {
+    min-height: 48px;
+}
+
+
+.form-div {
+    width: 100%;
+    position: relative;
+}
+
+.form-div label {
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    font-size: 1.3rem;
+    padding: 4px;
+    z-index: 1;
+}
+
+.contact-form.light label {
+    background-color: var(--light-color);
+    color: var(--text-light-color)
+}
+
+.contact-form.dark label {
+    background-color: var(--dark-color);
+    color: var(--text-dark-color)
+}
+
+.contact-form.light .form-input {
+    color: var(--text-light-color);
+    background-color: var(--light-color);
+}
+
+.contact-form.dark .form-input {
+    color: var(--text-dark-color);
+    background-color: var(--dark-color);
+}
+
+.form-submit-btn.btn {
+   align-self: flex-start;
+   margin-top: 8px;
+   cursor: pointer;
+   font-weight: 500;
+}
+
+.form-submit-btn:hover i {
+    margin-left: 8px;
+    transition: 0.3s all;
+}
+.form-submit-btn i {
+    margin-left: 4px;
+}
+
+
+.toast {
+    position: fixed;
+    top: 120px;
+    right: 24px;
+}

@@ -17,7 +17,7 @@ const About = () => {
               <div className="data-title-item">
                 <i className="bx bx-award"></i>
                 <h3 className="item-title">Kinh nghiệm</h3>
-                <p className="title-des">6 tháng</p>
+                <p className="title-des">3 tháng</p>
               </div>
               <div className="data-title-item">
                 <i className="bx bx-briefcase-alt"></i>

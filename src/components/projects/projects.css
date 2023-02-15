@@ -1,0 +1,67 @@
+.projects-container {
+    width: 100%;
+    max-width: var(--max-width-pc);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.projects-controller {
+    margin-top: 40px;
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.projects-btn {
+    min-width: 42px;
+    min-height: 20px;
+    padding: 4px;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    transition: 0.2s all;
+}
+
+.projects-btn.light:hover {
+    color: var(--text-dark-color);
+    background-color: var(--dark-color);
+}
+
+.projects-btn.dark:hover {
+    color: var(--text-light-color);
+    background-color: var(--light-color);
+}
+
+.projects-btn.light {
+    color: var(--text-light-color);
+    background-color: var(--light-color);
+}
+
+.projects-btn.dark {
+    color: var(--text-dark-color);
+    background-color: var(--dark-color);
+}
+
+.projects-btn.active.light {
+    background-color: var(--dark-color);
+    color: var(--text-dark-color);
+}
+
+.projects-btn.active.dark {
+    background-color: var(--light-color);
+    color: var(--text-light-color);
+}
+
+.project-cards {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

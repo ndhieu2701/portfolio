@@ -6,7 +6,7 @@
 
 .container {
     width: 100%;
-    padding: 80px 24px 0;
+    padding: 80px var(--padding-parent) 0;
 }
 
 .container.light {
