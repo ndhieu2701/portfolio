@@ -152,20 +152,34 @@
 }
 
 .form-submit-btn.btn {
-   align-self: flex-start;
-   margin-top: 8px;
-   cursor: pointer;
-   font-weight: 500;
+    align-self: flex-start;
+    margin-top: 8px;
+    cursor: pointer;
+    font-weight: 500;
 }
 
 .form-submit-btn:hover i {
     margin-left: 8px;
     transition: 0.3s all;
 }
+
 .form-submit-btn i {
     margin-left: 4px;
 }
 
+.loading-icon {
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 .toast {
     position: fixed;

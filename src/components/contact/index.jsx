@@ -1,4 +1,4 @@
-import React, { useRef, useState} from "react";
+import React, { useRef, useState } from "react";
 import { useSelector } from "react-redux";
 import SectionDes from "../sectionDes";
 import emailJs from "@emailjs/browser";
@@ -11,8 +11,8 @@ const Contact = () => {
   const email = useRef();
   const content = useRef();
   // toast
-  const [messages, setMessages] = useState([])
-
+  const [messages, setMessages] = useState([]);
+  const [loading, setLoading] = useState(false);
   // send email
   const sendEmail = (e) => {
     e.preventDefault();
@@ -22,18 +22,21 @@ const Contact = () => {
         email: email.current.value,
         content: content.current.value,
       };
+      setLoading(true);
       emailJs
         .send("mail_services", "contact_form", params, "0kNxqaLU4ZEojIQZs")
         .then(
           (result) => {
-            setMessages(arr => [...arr, result.text])
+            setLoading(false);
+            setMessages((arr) => [...arr, result.text]);
           },
           (error) => {
-            setMessages(arr => [...arr, error.text]) 
+            setLoading(false);
+            setMessages((arr) => [...arr, error.text]);
           }
         );
     } else {
-      setMessages(arr => [...arr, "Bạn phải điền hết các trường thông tin!"])
+      setMessages((arr) => [...arr, "Bạn phải điền hết các trường thông tin!"]);
     }
   };
   return (
@@ -70,7 +73,7 @@ const Contact = () => {
           <div className="contact-component contact-right">
             <h3 className="contact-title">Email cho mình</h3>
             <div className={`contact-form ${theme}`}>
-              <div className="form-div">
+              <div className="form-div">   
                 <label htmlFor="form-name">Name</label>
                 <input
                   type="text"
@@ -78,6 +81,7 @@ const Contact = () => {
                   ref={name}
                   className="form-input form-name"
                   placeholder="Input your name"
+                  spellcheck="false"
                 />
               </div>
               <div className="form-div">
@@ -88,6 +92,7 @@ const Contact = () => {
                   ref={email}
                   className="form-input form-email"
                   placeholder="Input your email"
+                  spellcheck="false"
                 />
               </div>
               <div className="form-div">
@@ -99,14 +104,25 @@ const Contact = () => {
                   cols="30"
                   rows="10"
                   placeholder="Write to me what you want"
+                  spellcheck="false"
                 ></textarea>
               </div>
               <button
                 className={`btn form-submit-btn ${theme}`}
                 onClick={sendEmail}
               >
-                Send email
-                <i className="uil uil-message"></i>
+                {loading && (
+                  <>
+                    Loading
+                    <i class="bx bx-loader-alt loading-icon"></i>
+                  </>
+                )}
+                {!loading && (
+                  <>
+                    Send email
+                    <i className="uil uil-message"></i>
+                  </>
+                )}
               </button>
             </div>
           </div>
@@ -114,7 +130,7 @@ const Contact = () => {
       </div>
       <div className="toast">
         {messages.map((message, index) => {
-          return <Toast key={index} message={message}/>
+          return <Toast key={index} message={message} />;
         })}
       </div>
     </section>
