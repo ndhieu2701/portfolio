@@ -81,7 +81,7 @@ const Contact = () => {
                   ref={name}
                   className="form-input form-name"
                   placeholder="Input your name"
-                  spellcheck="false"
+                  spellCheck="false"
                 />
               </div>
               <div className="form-div">
@@ -92,7 +92,7 @@ const Contact = () => {
                   ref={email}
                   className="form-input form-email"
                   placeholder="Input your email"
-                  spellcheck="false"
+                  spellCheck="false"
                 />
               </div>
               <div className="form-div">
@@ -104,7 +104,7 @@ const Contact = () => {
                   cols="30"
                   rows="10"
                   placeholder="Write to me what you want"
-                  spellcheck="false"
+                  spellCheck="false"
                 ></textarea>
               </div>
               <button
