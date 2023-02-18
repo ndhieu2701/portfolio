@@ -5,6 +5,7 @@
     align-items: flex-start;
     flex-direction: row-reverse;
     justify-content: space-evenly;
+    margin-left: 20px;
 }
 
 /* home data avatar */

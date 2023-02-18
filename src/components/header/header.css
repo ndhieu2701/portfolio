@@ -48,7 +48,12 @@
 .menu {
     display: flex;
     align-items: center;
-    flex-direction: row-reverse;
+    transition: 0.5s all;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2.6rem;
 }
 
 /* multi themes */
@@ -105,10 +110,16 @@
     padding: 4px 6px;
 }
 
+.navbar-item-link i {
+    display: none;
+}
+
+.menu-icon.light,
 .navbar-item-link.light {
     color: var(--text-light-color);
 }
 
+.menu-icon.dark,
 .navbar-item-link.dark {
     color: var(--text-dark-color);
 }
